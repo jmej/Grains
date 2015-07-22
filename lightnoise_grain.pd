@@ -737,8 +737,8 @@
 #X obj 1148 364 r \$0-g6;
 #X obj 1371 362 r \$0-g7;
 #X obj 1588 362 r \$0-g8;
-#X obj 851 183 hsl 128 15 0 127 0 0 empty empty lfo_amount -2 -8 0
-10 -262144 -1 -1 7900 1;
+#X obj 851 183 hsl 128 15 0 127 0 0 empty empty lfo_speed -2 -8 0 10
+-262144 -1 -1 7900 1;
 #X obj 52 390 1grain~;
 #X obj 269 390 1grain~;
 #X obj 709 388 1grain~;
