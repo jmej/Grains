@@ -1,11 +1,11 @@
-#N canvas 0 22 1436 803 10;
+#N canvas 245 23 1436 840 10;
 #N canvas 509 219 450 300 (subpatch) 0;
-#X array \$0-sample 99115 float 2;
-#X coords 0 1 99115 -1 750 140 1;
+#X array \$0-sample 2.9106e+06 float 2;
+#X coords 0 1 2.9106e+06 -1 750 140 1;
 #X restore 34 32 graph;
-#X obj 37 177 hsl 750 15 0 0 0 0 pos pos empty -2 -8 0 10 -262130 -1
--1 0 1;
-#N canvas 105 487 483 419 load 0;
+#X obj 37 177 hsl 750 15 0 2.9106e+06 0 0 pos pos empty -2 -8 0 10
+-262130 -1 -1 19100 1;
+#N canvas 438 202 483 419 load 0;
 #X obj 32 72 soundfiler;
 #X obj 32 -48 loadbang;
 #X obj 32 96 print sample-ct;
@@ -194,7 +194,7 @@
 #X obj 32 -6 f \$0;
 #X obj 105 -44 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X msg 32 20 read -resize /Users/jmej/Music/Lightnoise_audio/harpchord_short.wav
+#X msg 33 20 read -resize /Users/jmej1/Music/Rain_mediumStrums_ACE.wav
 \$1-sample;
 #X connect 0 0 2 0;
 #X connect 0 0 5 0;
@@ -225,10 +225,10 @@
 #X connect 28 0 27 0;
 #X connect 29 0 0 0;
 #X restore 731 10 pd load;
-#X obj 37 194 hsl 750 15 0 0 0 0 empty endpos empty -2 -8 0 10 -262144
--1 -1 -2.14748e+09 1;
-#X obj 583 233 nbx 9 14 0 0 0 0 pos pos empty 0 -8 0 10 -262130 -1
--1 0 256;
+#X obj 37 194 hsl 750 15 0 2.9106e+06 0 0 empty endpos empty -2 -8
+0 10 -262144 -1 -1 19157 1;
+#X obj 583 233 nbx 9 14 0 2.9106e+06 0 0 pos pos empty 0 -8 0 10 -262130
+-1 -1 742222 256;
 #X obj 88 235 bng 25 250 50 0 once empty empty 17 7 0 10 -204786 -1
 -1;
 #X obj 128 236 tgl 25 0 loop empty empty 17 7 0 10 -261234 -1 -1 1
@@ -404,7 +404,7 @@
 #X obj 243 968 outlet~;
 #X obj 69 964 outlet~;
 #X obj 1171 126 hsl 128 15 0 127 0 0 empty empty offset_spread -2 -8
-0 10 -262144 -1 -1 0 1;
+0 10 -262144 -1 -1 1500 1;
 #X obj 59 879 panner~;
 #X obj 139 913 panner~;
 #X obj 197 861 panner~;
@@ -414,7 +414,7 @@
 #X obj 371 875 r \$0-p4;
 #X obj 302 837 r \$0-p3;
 #X obj 644 892 hsl 128 15 0 127 0 0 empty empty stereo_spread -2 -8
-0 10 -262144 -1 -1 6300 1;
+0 10 -262144 -1 -1 10400 1;
 #X obj 686 976 jrange 0 1 0.5 1;
 #X obj 795 976 jrange 0 1 0.5 0;
 #X obj 703 1000 s \$0-p1;
@@ -433,7 +433,7 @@
 #X obj 619 824 loadbang;
 #X msg 619 847 63;
 #X obj 1396 89 hsl 128 15 0 127 0 0 empty empty size_spread -2 -8 0
-10 -262144 -1 -1 0 1;
+10 -262144 -1 -1 8600 1;
 #X obj 1042 4 mtof;
 #X obj 1045 -14 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 6000 1;
@@ -516,7 +516,7 @@
 #X floatatom 237 242 5 0 0 0 - - -, f 5;
 #X floatatom 280 243 5 0 0 0 - - -, f 5;
 #X obj 354 46 hsl 128 15 0 127 0 0 empty empty offset_spread -2 -8
-0 10 -262144 -1 -1 0 1;
+0 10 -262144 -1 -1 1500 1;
 #X msg 166 274 offset \$1;
 #X msg 206 307 offset \$1;
 #X msg 247 332 offset \$1;
@@ -630,13 +630,13 @@
 #X restore 1168 163 pd offset_spread;
 #N canvas 0 22 859 774 size_spread 0;
 #X obj 80 117 hsl 128 15 1.27 127 1 0 empty empty size_base -2 -8 0
-10 -262144 -1 -1 0 1;
+10 -262144 -1 -1 6200 1;
 #X floatatom 131 206 5 0 0 0 - - -, f 5;
 #X floatatom 198 204 5 0 0 0 - - -, f 5;
 #X floatatom 237 203 5 0 0 0 - - -, f 5;
 #X floatatom 278 204 5 0 0 0 - - -, f 5;
 #X obj 331 25 hsl 128 15 0 127 0 0 empty empty size_spread -2 -8 0
-10 -262144 -1 -1 0 1;
+10 -262144 -1 -1 8600 1;
 #X obj 198 178 *;
 #X obj 237 178 *;
 #X obj 278 180 *;
@@ -728,7 +728,7 @@
 #X connect 44 0 32 1;
 #X restore 1393 115 pd size_spread;
 #X obj 1317 45 hsl 128 15 1.27 127 1 0 empty empty size_base -2 -8
-0 10 -262144 -1 -1 0 1;
+0 10 -262144 -1 -1 6200 1;
 #X obj 931 615 throw~ g5;
 #X obj 1148 615 throw~ g6;
 #X obj 1371 613 throw~ g7;
@@ -738,7 +738,7 @@
 #X obj 1371 362 r \$0-g7;
 #X obj 1588 362 r \$0-g8;
 #X obj 851 183 hsl 128 15 0 127 0 0 empty empty lfo_amount -2 -8 0
-10 -262144 -1 -1 0 1;
+10 -262144 -1 -1 7900 1;
 #X obj 52 390 1grain~;
 #X obj 269 390 1grain~;
 #X obj 709 388 1grain~;
@@ -814,7 +814,11 @@
 #X connect 28 0 26 0;
 #X restore 926 233 pd lfo_spread;
 #X obj 992 183 hsl 128 15 0 127 0 0 empty empty lfo_spread -2 -8 0
-10 -262144 -1 -1 0 1;
+10 -262144 -1 -1 12700 1;
+#X obj 1044 229 hsl 128 15 0 127 0 0 empty empty lfo_amount -2 -8 0
+10 -262144 -1 -1 2300 1;
+#X obj 1052 289 s \$0-all;
+#X msg 1052 259 lfo-amount \$1;
 #X connect 12 0 32 0;
 #X connect 12 0 71 0;
 #X connect 13 0 12 1;
@@ -992,3 +996,5 @@
 #X connect 201 0 151 0;
 #X connect 202 0 118 0;
 #X connect 204 0 203 1;
+#X connect 205 0 207 0;
+#X connect 207 0 206 0;
